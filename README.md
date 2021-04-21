@@ -27,7 +27,10 @@ As I had to discover, you *cannot* open a WebSocket server from cellular network
 instead of a direct connection to the boat. All the realtime transmission happens over Socket.io which is
 adopted by frameworks for many different languages. Here is a simple connection diagram:
 
-`🎮 Client/Phone` ↔️ `📟 Proxy/Server` ↔️ `⛵️ Boat`
+```markdown
+**🎮 Client/Phone** ↔️ **📟 Proxy/Server** ↔️ **⛵️ Boat**
+      Svelte                 Golang             Python
+```
 
 ## 🎚 Hardware
 
@@ -75,6 +78,8 @@ but it's working perfectly autonomous in the simulation right now.
 A more detailed description of what's going on inside the autopilot will be available soon!
 
 ## 🚧 Going further
+
+If you are interested, you can look into our [Documentation](./docs)
 
 I am grateful for any type of feedback, inspiration or question regarding CosmicSail.<br>
 Feel free to create an issue or mail me to get in touch.
